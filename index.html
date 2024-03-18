@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TravelOpedia</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- fonts -->
+    <link rel="stylesheet" href="font/fonts.css">
+    <!-- normalize css -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/utility.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <!-- navbar  -->
+    <nav class="navbar">
+        <div class="container flex">
+            <a href="index.html" class="site-brand">
+                Travel<span>Opedia</span>
+            </a>
+
+            <button type="button" id="navbar-show-btn" class="flex">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div id="navbar-collapse">
+                <button type="button" id="navbar-close-btn" class="flex">
+                    <i class="fas fa-times"></i>
+                </button>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end of navbar  -->
+
+    <!-- header -->
+    <header class="flex">
+        <div class="container">
+            <div class="header-title">
+                <h1>Welcome to TravelOpedia!<br> Your go-to traveling agency..</h1>
+                <p>Explore the world through our eyes for the best experience away from home! </p>
+            </div>
+            <div class="header-form" id="myDIV">
+                <h2>Enter all the places you traveled to last year and try to beat your score this year:)</h2>
+                <form class="flex">
+                    <input type="text" class="form-control" placeholder="Destination name..." id="myInput">
+                    <span onclick="newElement()" class="btn">Add</span>
+                </form>
+                <br>
+                <ul id="myUL">
+
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- end of header -->
+
+
+    <!-- featured section -->
+    <section id="featured" class="py-4">
+        <div class="container">
+            <div class="title-wrap">
+                <span class="sm-title">Know about some places before your travel</span>
+                <h2 class="lg-title">Featured places</h2>
+            </div>
+
+            <div class="featured-row">
+                <div class="featured-item my-2 shadow" id="brazil">
+                    <img src="images/featured-reo-de-janeiro-brazil.jpg" alt="featured place">
+                    <div class="featured-item-content">
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i>
+                            Reo De Janeiro, Brazil
+                        </span>
+                        <div>
+                            <p class="text">It is located on the Atlantic Ocean, and is widely<br>
+                                recognized as one of the world's most beautiful and interesting<br> urban centres.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="featured-item my-2 shadow" id="spain">
+                    <img src="images/featured-barcelona-camp-nou-spain.jpg" alt="featured place">
+                    <div class="featured-item-content">
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i>
+                            Barcelona, Spain
+                        </span>
+                        <div>
+                            <p class="text">Barcelona, the cosmopolitan capital of Spain's Catalonia region, is
+                                known
+                                for its art and architecture. Not to forget the home stadium <br> of FC Barcelona,
+                                the
+                                largest
+                                stadium in Spain and Europe, Camp Nou</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="featured-item my-2 shadow" id="jordan">
+                    <img src="images/featured-amman-jordan.jpg" alt="featured place">
+                    <div class="featured-item-content">
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i>
+                            Amman, Jordan
+                        </span>
+                        <div>
+                            <p class="text">Amman, the capital of Jordan, is a fascinating city, situated on a hilly
+                                area. Containing ultra-modern
+                                buildings, art galleries and boutiques rub shoulders comfortably with
+                                traditional coffee shops.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="featured-item my-2 shadow" id="frenchPolynesia">
+                    <img src="images/featured-bora-bora-french-polynesia.jpg" alt="featured place">
+                    <div class="featured-item-content">
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i>
+                            Bora Bora, French Polynesia
+                        </span>
+                        <div>
+                            <p class="text">Bora Bora is located on a dormant volcano island, set on one of the
+                                world's
+                                most beautiful and crystal-clear lagoons,
+                                colored in a million shades of blue.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="featured-item my-2 shadow" id="greece">
+                    <img src="images/featured-santorini-greece.jpg" alt="featured place">
+                    <div class="featured-item-content">
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i>
+                            Santorini, Greece
+                        </span>
+                        <div>
+                            <p class="text">Santorini is a windswept, volcanic island in the Cyclades. Magical
+                                sunsets
+                                in Oia, photogenic blue
+                                dome churches, and a myriad of colorful beaches.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="featured-item my-2 shadow" id="maldives">
+                    <img src="images/featured-male-atoll-maldives.jpg" alt="featured place">
+                    <div class="featured-item-content">
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i>
+                            Malé Atoll, Maldives
+                        </span>
+                        <div>
+                            <p class="text">Malé Atoll is the largest city and the most popular destination <br>
+                                among
+                                the
+                                best places to visit in Maldives. It is among
+                                the top <br> Maldives tourism places.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of featured section -->
+
+    <!-- services section -->
+    <section id="services" class="py-4">
+        <div class="container">
+            <div class="title-wrap">
+                <span class="sm-title">Know about services that we offer</span>
+                <h2 class="lg-title">Our services</h2>
+            </div>
+
+            <div class="services-row">
+                <div class="services-item">
+                    <span class="services-icon">
+                        <i class="fas fa-hotel"></i>
+                    </span>
+                    <h3>Luxurious Hotel</h3>
+                    <p class="text">You don't know which hotel suits you? Not a problem! Here in TravelOpedia we
+                        choose
+                        the best hotel for you.
+                        TravelOpedia is linked with many luxurious 5 star hotels with the best prices you can find.
+                    </p>
+                </div>
+
+                <div class="services-item">
+                    <span class="services-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </span>
+                    <h3>Travel Guide</h3>
+                    <p class="text">TravelOpedia has a travel guide for almost every country in the world! Written
+                        by
+                        travel experts and tour guides making
+                        your travelling experience the best one yet!</p>
+                </div>
+
+                <div class="services-item">
+                    <span class="services-icon">
+                        <i class="fas fa-money-bill"></i>
+                    </span>
+                    <h3>Suitable Price</h3>
+                    <p class="text">This travel agency is known for finding the best prices for you. TravelOpedia
+                        helps
+                        making your dream trip true with
+                        suitable prices that would without doubt make your heart happy!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of services section -->
+
+    <!-- testimonials section -->
+    <section id="testimonials" class="py-4">
+        <div class="container">
+            <div class="title-wrap">
+                <span class="sm-title">What our clients say about us</span>
+                <h2 class="lg-title">Testimonials</h2>
+            </div>
+
+            <div class="test-row">
+                <div class="test-item">
+                    <p class="text">Abdullah is a true professional. He was so patient with all the inquiries and
+                        questions I had!
+                        It was a pleasure to work with him. Will definitely use TravelOpedia again!</p>
+                    <div class="test-item-info">
+                        <img src="images/customer-1.jpg" alt="testimonial">
+                        <div>
+                            <h3>Hamzah Qardahi</h3>
+                            <p class="text">Trip to Amman</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="test-item">
+                    <p class="text">Communication was excellent. The service was great, the questions were answered
+                        no
+                        matter how silly
+                        they were. I never really used travel agencies before, but after this experience
+                        TravelOpedia
+                        will for sure
+                        be my go to travel agency.</p>
+                    <div class="test-item-info">
+                        <img src="images/customer-2.jpg" alt="testimonial">
+                        <div>
+                            <h3>Mahmoud Darwish</h3>
+                            <p class="text">Trip to Maldives</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="test-item">
+                    <p class="text">Julia was our agent and she was beyond incridible! She had an answer for every
+                        question, gave us advice and tips
+                        for finding our dream family vacation house, and we did! It was perfect. Thank you for this
+                        amazing service.</p>
+                    <div class="test-item-info">
+                        <img src="images/customer-3.jpg" alt="testimonial">
+                        <div>
+                            <h3>Lara Del Rey</h3>
+                            <p class="text">Trip to Greece</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of testimonials section -->
+
+    <!-- video section -->
+    <section id="video">
+        <div class="video-wrapper flex">
+            <video loop>
+                <source src="videos/video-section.mp4" type="video/mp4">
+            </video>
+            <button type="button" id="play-btn">
+                <i class="fas fa-play"></i>
+            </button>
+        </div>
+    </section>
+    <!-- end of video section -->
+
+    <!-- footer -->
+    <footer class="py-4">
+        <div class="container footer-row">
+            <div class="footer-item">
+                <a href="index.html" class="site-brand">
+                    Travel<span>Opedia</span>
+                </a>
+                <p class="text"><strong>Don't miss out on our travel deals!</strong><br>
+                    Get travel inspo, expert advice and tips, hot holiday savings right to your inbox.</p>
+            </div>
+
+            <div class="footer-item">
+                <h2>Follow us: </h2>
+                <img src="images/creator-1.jpeg" alt="creator 1" class="creator-smaller">
+                <p>Farah AlMasri 20200533</p>
+                <ul class="social-links">
+                    <li>
+                        <a href="https://www.facebook.com/farah.awamleh.73" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/farahawamlehh/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailTo:far20200533@std.psut.edu.jo" target="_blank">
+                            <i class="fab fa-google-plus"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <img src="images/creator-2.jpeg" alt="creator 2" class="creator-smaller">
+                <p>Omar Khalil 20200889</p>
+                <ul class="social-links">
+                    <li>
+                        <a href="https://www.facebook.com/omar.khaleel.1" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/omarkhaleeel/" target="_blank">
+                            <i sclass="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailTo:oma20200889@std.psut.edu.jo" target="_blank">
+                            <i class="fab fa-google-plus"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-item">
+                <h2>Popular Places:</h2>
+                <ul>
+                    <li><a href="#brazil">Brazil</a></li>
+                    <li><a href="#spain">Spain</a></li>
+                    <li><a href="#jordan">Jordan</a></li>
+                    <li><a href="#frenchPolynesia">French Polynesia</a></li>
+                    <li><a href="#greece">Greece</a></li>
+                    <li><a href="#maldives">Maldives</a></li>
+                </ul>
+            </div>
+
+            <div class="subscribe-form footer-item">
+                <h2>Subscribe for Newsletter!</h2>
+                <form class="flex" action="php/newsletterSubscription.php" method="post">
+                    <input type="email" name="email" placeholder="Enter Email" class="form-control">
+                    <input type="submit" name="subscribe" class="btn" value="Subscribe">
+                </form>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+
+    <!-- js for the beach video -->
+    <script src="js/script.js"></script>
+    <script>
+        // play/pause video
+        let video = document.querySelector('.video-wrapper video');
+        document.getElementById('play-btn').addEventListener('click', () => {
+            if (video.paused) {
+                video.play();
+            } else {
+                video.pause();
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TravelOpedia</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- fonts -->
+    <link rel="stylesheet" href="font/fonts.css">
+    <!-- normalize css -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/utility.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <!-- navbar  -->
+    <nav class="navbar">
+        <div class="container flex">
+            <a href="index.html" class="site-brand">
+                Travel<span>Opedia</span>
+            </a>
+
+            <button type="button" id="navbar-show-btn" class="flex">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div id="navbar-collapse">
+                <button type="button" id="navbar-close-btn" class="flex">
+                    <i class="fas fa-times"></i>
+                </button>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end of navbar  -->
+
+    <!-- header -->
+    <header class="flex header-sm">
+        <div class="container">
+            <div class="header-title">
+                <h1>Contact</h1>
+            </div>
+        </div>
+    </header>
+    <!-- header -->
+
+    <!-- contact section -->
+    <section id="contact" class="py-4">
+        <div class="container">
+            <div class="title-wrap">
+                <span class="sm-title">Get in touch with us</span>
+                <h2 class="lg-title">Contact us</h2>
+            </div>
+
+            <div class="contact-row">
+                <div class="contact-left">
+                    <form class="contact-form" method="post" action="php/contactUsHandle.php"
+                        onsubmit="return validateContactForm()">
+                        <input type="text" class="form-control" id="firstName" name="firstName"
+                            placeholder="Your first name" required>
+                        <input type="text" class="form-control" id="lastName" name="lastName"
+                            placeholder="Your last name" required>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Your email"
+                            required>
+                        <input type="text" class="form-control" id="phoneNumber" name="phoneNumber"
+                            placeholder="Your phone number" required>
+                        <textarea rows="4" class="form-control" id="message" name="message" placeholder="Your message"
+                            style="resize: none;"></textarea>
+                        <input type="submit" class="btn" name="submit" placeholder="Send message">
+                    </form>
+                </div>
+                <div class="contact-right my-2">
+                    <div class="contact-item">
+                        <span class="contact-icon flex">
+                            <i class="fa fa-phone-alt"></i>
+                        </span>
+                        <div>
+                            <span>Phone</span>
+                            <p class="text">+962 7 9887 1977</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon flex">
+                            <i class="fa fa-map-marked-alt"></i>
+                        </span>
+                        <div>
+                            <span>Address</span>
+                            <p class="text">Gardens - Muhammad An-Najdawi St. - Buiding 33 - Apartment 34</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon flex">
+                            <i class="fa fa-envelope"></i>
+                        </span>
+                        <div>
+                            <span>Message</span>
+                            <p class="text">info@travelOpedia.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of contact section -->
+
+
+    <!-- footer -->
+    <footer class="py-4">
+        <div class="container footer-row">
+            <div class="footer-item">
+                <a href="index.html" class="site-brand">
+                    Travel<span>Opedia</span>
+                </a>
+                <p class="text"><strong>Don't miss out on our travel deals!</strong><br>
+                    Get travel inspo, expert advice and tips, hot holiday savings right to your inbox.</p>
+            </div>
+
+            <div class="footer-item">
+                <h2>Follow us: </h2>
+                <img src="images/creator-1.jpeg" alt="creator 1" class="creator-smaller">
+                <p>Farah AlMasri</p>
+                <ul class="social-links">
+                    <li>
+                        <a href="https://www.facebook.com/farah.awamleh.73" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/farahawamlehh/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailTo:far20200533@std.psut.edu.jo" target="_blank">
+                            <i class="fab fa-google-plus"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <img src="images/creator-2.jpeg" alt="creator 2" class="creator-smaller">
+                <p>Omar Khalil</p>
+                <ul class="social-links">
+                    <li>
+                        <a href="https://www.facebook.com/omar.khaleel.1" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/omarkhaleeel/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailTo:oma20200889@std.psut.edu.jo" target="_blank">
+                            <i class="fab fa-google-plus"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-item">
+                <h2>Popular Places:</h2>
+                <ul>
+                    <li><a href="index.html #brazil">Brazil</a></li>
+                    <li><a href="index.html #spain">Spain</a></li>
+                    <li><a href="index.html #jordan">Jordan</a></li>
+                    <li><a href="index.html #frenchPolynesia">French Polynesia</a></li>
+                    <li><a href="index.html #greece">Greece</a></li>
+                    <li><a href="index.html #maldives">Maldives</a></li>
+                </ul>
+            </div>
+
+            <div class="subscribe-form footer-item">
+                <h2>Subscribe for Newsletter!</h2>
+                <form class="flex">
+                    <input type="email" placeholder="Enter Email" class="form-control">
+                    <input type="submit" class="btn" value="Subscribe">
+                </form>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+
+    <!-- js -->
+    <script src="js/script.js"></script>
+    <script>
+        function validateContactForm() {
+            var valid = true;
+
+            $(".form-control").css('border', '#e0dfdf 1px solid');
+            var firstName = $("#firstName").val();
+            var lastName = $("#lastName").val();
+            var email = $("#email").val();
+            var phoneNumber = $("#phoneNumber").val();
+            var message = $("#message").val();
+
+            if (firstName == "") {
+                $("#firstName").html("Required.");
+                $("#firsName").css('border', '#e66262 1px solid');
+                valid = false;
+            }
+            if (lastName == "") {
+                $("#lastName").html("Required.");
+                $("#lastName").css('border', '#e66262 1px solid');
+                valid = false;
+            }
+            if (!email.match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2, 4})?$/)) {
+                $("#email").html("Invalid Email Address.");
+                $("#email").css('border', '#e66262 1px solid');
+                valid = false;
+            }
+            if (!email.match(/^\(00962\)(77|78|79)-\d{7}$/)) {
+                $("#phoneNumber").html("Invalid phone number.");
+                $("#phoneNumber").css('border', '#e66262 1px solid');
+                valid = false;
+            }
+            if (content == "") {
+                $("#message").html("No message.");
+            }
+            return valid;
+        }
+    </script>
+</body>
+
+</html>

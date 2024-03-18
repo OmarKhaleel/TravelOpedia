@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TravelOpedia</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- fonts -->
+    <link rel="stylesheet" href="font/fonts.css">
+    <!-- normalize css -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/utility.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <!-- navbar  -->
+    <nav class="navbar">
+        <div class="container flex">
+            <a href="index.html" class="site-brand">
+                Travel<span>Opedia</span>
+            </a>
+
+            <button type="button" id="navbar-show-btn" class="flex">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div id="navbar-collapse">
+                <button type="button" id="navbar-close-btn" class="flex">
+                    <i class="fas fa-times"></i>
+                </button>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end of navbar  -->
+
+    <!-- header -->
+    <header class="flex header-sm">
+        <div class="container">
+            <div class="header-title">
+                <h1>Gallery</h1>
+            </div>
+        </div>
+    </header>
+    <!-- header -->
+
+    <!-- gallery section -->
+    <div id="gallery" class="py-4">
+        <div class="container">
+            <div class="gallery-row">
+                <div class="gallery-item shadow">
+                    <img src="images/gallery-1.jpg" alt="gallery img">
+                    <span class="zoom-icon">
+                        <i class="fas fa-search-plus"></i>
+                    </span>
+                </div>
+                <div class="gallery-item shadow">
+                    <img src="images/gallery-2.jpg" alt="gallery img">
+                    <span class="zoom-icon">
+                        <i class="fas fa-search-plus"></i>
+                    </span>
+                </div>
+                <div class="gallery-item shadow">
+                    <img src="images/gallery-3.jpg" alt="gallery img">
+                    <span class="zoom-icon">
+                        <i class="fas fa-search-plus"></i>
+                    </span>
+                </div>
+                <div class="gallery-item shadow">
+                    <img src="images/gallery-4.jpg" alt="gallery img">
+                    <span class="zoom-icon">
+                        <i class="fas fa-search-plus"></i>
+                    </span>
+                </div>
+                <div class="gallery-item shadow">
+                    <img src="images/gallery-5.jpg" alt="gallery img">
+                    <span class="zoom-icon">
+                        <i class="fas fa-search-plus"></i>
+                    </span>
+                </div>
+                <div class="gallery-item shadow">
+                    <img src="images/gallery-6.jpg" alt="gallery img">
+                    <span class="zoom-icon">
+                        <i class="fas fa-search-plus"></i>
+                    </span>
+                </div>
+                <div class="gallery-item shadow">
+                    <img src="images/gallery-7.jpg" alt="gallery img">
+                    <span class="zoom-icon">
+                        <i class="fas fa-search-plus"></i>
+                    </span>
+                </div>
+                <div class="gallery-item shadow">
+                    <img src="images/gallery-8.jpg" alt="gallery img">
+                    <span class="zoom-icon">
+                        <i class="fas fa-search-plus"></i>
+                    </span>
+                </div>
+                <div class="gallery-item shadow">
+                    <img src="images/gallery-9.jpg" alt="gallery img">
+                    <span class="zoom-icon">
+                        <i class="fas fa-search-plus"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of gallery section -->
+
+    <!-- img modal -->
+    <div id="img-modal-box">
+        <div id="img-modal">
+            <button type="button" id="modal-close-btn" class="flex">
+                <i class="fas fa-times"></i>
+            </button>
+            <button type="button" id="prev-btn" class="flex">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button type="button" id="next-btn" class="flex">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <img src="images/gallery-1.jpg">
+        </div>
+    </div>
+    <!-- end of img modal -->
+
+    <!-- popular places section -->
+    <section id="popular" class="py-4">
+        <div class="title-wrap">
+            <span class="sm-title">Know about some cool destinations</span>
+            <h2 class="lg-title">Popular Places</h2>
+        </div>
+
+        <div class="popular-row">
+            <div class="popular-item shadow">
+                <img src="images/popular-1.jpg" alt="popular place img">
+                <div>
+                    <span>Eiffel Tower, Paris</span>
+                    <ul class="rating flex">
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star-half-alt"></i></li>
+                        <li>&nbsp;1023 reviews</li>
+                    </ul>
+                    <p class="text">City of Light!</p>
+                </div>
+            </div>
+
+            <div class="popular-item shadow">
+                <img src="images/popular-2.jpg" alt="popular place img">
+                <div>
+                    <span>Machu Picchu, Peru</span>
+                    <ul class="rating flex">
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star-half-alt"></i></li>
+                        <li>&nbsp;202 reviews</li>
+                    </ul>
+                    <p class="text">Machu Picchu is over 7,900 feet above sea level!</p>
+                </div>
+            </div>
+
+            <div class="popular-item shadow">
+                <img src="images/popular-3.jpg" alt="popular place img">
+                <div>
+                    <span>Acropolis, Athens</span>
+                    <ul class="rating flex">
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star-half-alt"></i></li>
+                        <li>&nbsp;409 reviews</li>
+                    </ul>
+                    <p class="text">City on the Air!</p>
+                </div>
+            </div>
+
+            <div class="popular-item shadow">
+                <img src="images/popular-4.jpg" alt="popular place img">
+                <div>
+                    <span>Bali, Indonesia</span>
+                    <ul class="rating flex">
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star-half-alt"></i></li>
+                        <li>&nbsp;348 reviews</li>
+                    </ul>
+                    <p class="text">It's always hot in Bali!</p>
+                </div>
+            </div>
+
+            <div class="popular-item shadow">
+                <img src="images/popular-5.jpg" alt="popular place img">
+                <div>
+                    <span>Dubai, United Arab Emirates</span>
+                    <ul class="rating flex">
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star-half-alt"></i></li>
+                        <li>&nbsp;911 reviews</li>
+                    </ul>
+                    <p class="text">The Palm Jumeirah can be <br> seen from space!</p>
+                </div>
+            </div>
+
+            <div class="popular-item shadow">
+                <img src="images/popular-6.jpg" alt="popular place img">
+                <div>
+                    <span>Bhutan, China</span>
+                    <ul class="rating flex">
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star-half-alt"></i></li>
+                        <li>&nbsp;675 reviews</li>
+                    </ul>
+                    <p class="text">The ONLY Carbon Negative <br> Country in the World!</p>
+                </div>
+            </div>
+
+            <div class="popular-item shadow">
+                <img src="images/popular-7.jpg" alt="popular place img">
+                <div>
+                    <span>Havana, Cuba</span>
+                    <ul class="rating flex">
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star-half-alt"></i></li>
+                        <li>&nbsp;98 reviews</li>
+                    </ul>
+                    <p class="text">City of Vintage Cars!</p>
+                </div>
+            </div>
+
+            <div class="popular-item shadow">
+                <img src="images/popular-8.jpg" alt="popular place img">
+                <div>
+                    <span>Moskva, Russia</span>
+                    <ul class="rating flex">
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star-half-alt"></i></li>
+                        <li>&nbsp;897 reviews</li>
+                    </ul>
+                    <p class="text">The Moscow Kremlin is the <br> world's largest medieval <br> fortress!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of popular places section -->
+
+
+    <!-- footer -->
+    <footer class="py-4">
+        <div class="container footer-row">
+            <div class="footer-item">
+                <a href="index.html" class="site-brand">
+                    Travel<span>Opedia</span>
+                </a>
+                <p class="text"><strong>Don't miss out on our travel deals!</strong><br>
+                    Get travel inspo, expert advice and tips, hot holiday savings right to your inbox.</p>
+            </div>
+
+            <div class="footer-item">
+                <h2>Follow us: </h2>
+                <img src="images/creator-1.jpeg" alt="creator 1" class="creator-smaller">
+                <p>Farah AlMasri</p>
+                <ul class="social-links">
+                    <li>
+                        <a href="https://www.facebook.com/farah.awamleh.73" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/farahawamlehh/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailTo:far20200533@std.psut.edu.jo" target="_blank">
+                            <i class="fab fa-google-plus"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <img src="images/creator-2.jpeg" alt="creator 2" class="creator-smaller">
+                <p>Omar Khalil</p>
+                <ul class="social-links">
+                    <li>
+                        <a href="https://www.facebook.com/omar.khaleel.1" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/omarkhaleeel/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailTo:oma20200889@std.psut.edu.jo" target="_blank">
+                            <i class="fab fa-google-plus"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-item">
+                <h2>Popular Places:</h2>
+                <ul>
+                    <li><a href="index.html #brazil">Brazil</a></li>
+                    <li><a href="index.html #spain">Spain</a></li>
+                    <li><a href="index.html #jordan">Jordan</a></li>
+                    <li><a href="index.html #frenchPolynesia">French Polynesia</a></li>
+                    <li><a href="index.html #greece">Greece</a></li>
+                    <li><a href="index.html #maldives">Maldives</a></li>
+                </ul>
+            </div>
+
+            <div class="subscribe-form footer-item">
+                <h2>Subscribe for Newsletter!</h2>
+                <form class="flex">
+                    <input type="email" placeholder="Enter Email" class="form-control">
+                    <input type="submit" class="btn" value="Subscribe">
+                </form>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+
+    <!-- js -->
+    <script src="js/script.js"></script>
+    <script>
+        // image modal
+        const allGalleryItem = document.querySelectorAll('.gallery-item');
+        const imgModalDiv = document.getElementById('img-modal-box');
+        const modalCloseBtn = document.getElementById('modal-close-btn');
+        const nextBtn = document.getElementById('next-btn');
+        const prevBtn = document.getElementById('prev-btn');
+        let imgIndex = 0;
+
+        allGalleryItem.forEach((galleryItem) => {
+            galleryItem.addEventListener('click', () => {
+                imgModalDiv.style.display = "block";
+                let imgSrc = galleryItem.querySelector('img').src;
+                imgIndex = parseInt(imgSrc.split("-")[1].substring(0, 1));
+                showImageContent(imgIndex);
+            })
+        });
+
+        // next click
+        nextBtn.addEventListener('click', () => {
+            imgIndex++;
+            if (imgIndex > allGalleryItem.length) {
+                imgIndex = 1;
+            }
+            showImageContent(imgIndex);
+        });
+
+        // previous click
+        prevBtn.addEventListener('click', () => {
+            imgIndex--;
+            if (imgIndex <= 0) {
+                imgIndex = allGalleryItem.length;
+            }
+            showImageContent(imgIndex);
+        });
+
+        function showImageContent(index) {
+            imgModalDiv.querySelector('#img-modal img').src = `images/gallery-${index}.jpg`;
+        }
+
+        modalCloseBtn.addEventListener('click', () => {
+            imgModalDiv.style.display = "none";
+        })
+    </script>
+</body>
+
+</html>
